@@ -1,0 +1,8 @@
+{
+    "name": "ivuorinen/rss-audio-player",
+    "description": "Web based RSS Audio Player",
+    "license": "MIT",
+    "require": {
+        "simplepie/simplepie": "*"
+    }
+}

@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /rss-audio-player/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]*)$ ./index.php [QSA]
+RewriteRule ^list/([^/]*)$ ./index.php?page=list [QSA]
+RewriteRule ^show/([^/]*)$ ./index.php?page=show&feed=$1 [QSA,L]
+</IfModule>
